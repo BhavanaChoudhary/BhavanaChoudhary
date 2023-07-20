@@ -1,0 +1,20 @@
+class LinearSearchInRanges{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5};
+        int target=5;
+        int ele;
+        int ans= lsearch(a,target,1,3);
+        System.out.println(ans);
+    }
+
+    public static int lsearch( int a[], int target,int start,int end){
+        int ele;
+        for(int i=start; i<=end; i++){
+        ele=a[i];
+        if(ele==target){
+         return i;
+        }
+        }
+      return -1;
+    }
+} 
