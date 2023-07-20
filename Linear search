@@ -1,0 +1,20 @@
+class LinearSearch{
+    public static void main(String[] args) {
+        int a[]={1,21,3,4,5};
+        int target=3;
+        int ele;
+        int ans= lsearch(a,target);
+        System.out.println(ans);
+    }
+
+    public static int lsearch( int a[], int target){
+        int ele;
+        for(int i=0; i<a.length; i++){
+        ele=a[i];
+        if(ele==target){
+         return i;
+        }
+        }
+      return -1;
+    }
+} 
