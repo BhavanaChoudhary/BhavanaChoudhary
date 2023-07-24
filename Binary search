@@ -40,7 +40,7 @@ public class BinarySearchExample {
         int targetElement = 23;
 
         int ans = binarySearch(arr,target); 
-        System.out.orintln(ans);
+        System.out.println(ans);
         
     }
 }
