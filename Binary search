@@ -1,8 +1,15 @@
 import java.util.Arrays;
 
 public class BinarySearchExample {
-    public static int binarySearch(int[] arr, int target, int start, int end) {
-        while (start <= end) {
+    public static int binarySearch(int[] arr, int target) {
+           boolean isAsc;
+           if(arr[start]<arr[end]){
+            isAsc=true;
+           }
+            else{
+             isAsc=false;
+            }
+           while (start <= end) {
             int mid = start + (end - start) / 2;
             if(isAsc){
             if (arr[mid] == target) {
