@@ -1,6 +1,7 @@
 public class BinarySearchExample {
     public static int binarySearch(int[] arr, int target) {
-           boolean isAsc;
+         int start=0,end=arr.length-1;
+          boolean isAsc;
            if(arr[start]<arr[end]){
             isAsc=true;
            }
