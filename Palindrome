@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        int number = 12321; // Change the number here to test different cases
+        int originalNumber = number; // Store the original number
+        int reversedNumber = 0;
+        
+        while (number != 0) {
+            reversedNumber = reversedNumber * 10 + (number % 10); // Build the reversed number
+            number /= 10; // Remove the last digit from the original number
+        }
+        
+        if (originalNumber == reversedNumber) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not a Palindrome");
+        }
+    }
+}
