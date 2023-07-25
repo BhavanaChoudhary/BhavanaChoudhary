@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        int number = 12345;
+        int reversedNumber = 0;
+        while (number != 0){
+            reversedNumber = reversedNumber * 10 + (number%10); // Build the reversed number
+            number /= 10; // Remove the last digit from the original number
+        }
+        
+        System.out.println("The reverse of a number is" + 
+reversedNumber);
+    }
+}
