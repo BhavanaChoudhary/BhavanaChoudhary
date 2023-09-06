@@ -1,0 +1,28 @@
+public class Exception {
+    public static void main(String[] args) {
+        int a,b;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("ENTER THE VALUES");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        try {
+            if(b==0) {
+                throw new ArithmeticException("divide by 0");
+            }
+            int res=a/b;
+            System.out.println("result is="+res);
+        } catch(ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            int arr[]=new int[5];
+            
+            arr[10]=50;
+
+        } catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
+}
