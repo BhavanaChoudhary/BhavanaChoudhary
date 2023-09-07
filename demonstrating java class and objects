@@ -1,0 +1,32 @@
+class Student{
+    String USN;
+    String NAME;
+    
+    void setval(String n,String u) {
+        USN=u;
+        NAME=n;
+    }
+    void display(){
+        System.out.println(NAME+"\t"+USN);
+    }
+}
+public class Stu{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the no. of students");
+        int n=sc.nextInt();
+        Student s[]=new Student[n];
+        for(int i=0;i<n;i++){
+            s[i]=new Student();
+             System.out.println("enter the info of"+(i+1));
+             System.out.println("name=");
+             String a=sc.next();
+              System.out.println("usn=");
+              String b=sc.next();
+              s[i].setval(a,b);
+        }
+         for(int i=0;i<n;i++){
+             s[i].display();
+         }
+    }
+}
