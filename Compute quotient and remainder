@@ -1,0 +1,16 @@
+import java.util.*;
+
+class Number {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int divisor,dividend;
+        long quotient,remainder;
+        System.out.println("\nEnter divisor and dividend :");
+        divisor=sc.nextInt();
+        dividend=sc.nextInt();
+        quotient=dividend/divisor;
+        remainder=dividend%divisor;
+        System.out.println("Quotient is: " + quotient );
+        System.out.println("Remainder is: " + remainder );
+    }
+}
