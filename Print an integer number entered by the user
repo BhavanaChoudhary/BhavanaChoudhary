@@ -1,0 +1,11 @@
+import java.util.*;
+
+class Number {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a;
+        System.out.println("\nEnter an integer number :");
+        a=sc.nextInt();
+        System.out.println("Integer number entered by the user is : " + a);
+    }
+}
